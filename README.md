@@ -19,7 +19,7 @@ go get github.com/unioslo/slog-ecs
 ```go
 import (
     "log/slog"
-    slogecs "github.com/unioslo/slog-ecs"
+    "github.com/unioslo/slog-ecs"
 )
 
 slog.SetDefault(slog.New(slogecs.NewHandler(slog.LevelInfo)))
@@ -43,7 +43,7 @@ Output:
 ```go
 import (
     "net/http"
-    slogecs "github.com/unioslo/slog-ecs"
+    "github.com/unioslo/slog-ecs"
 )
 
 handler := slogecs.HTTPLogger(mux)
